@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to Team Syncer API!');
 });
 
-ii.on('connection', (socket) => {
+io.on('connection', (socket) => {  // Fixing typo from 'ii' to 'io'
   console.log('A user connected');
 
   socket.on('disconnect', () => {
