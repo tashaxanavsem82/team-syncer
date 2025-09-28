@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 // Configure CORS to allow requests from specific origins
-app.use(cors({ origin: ['https://example.com', 'https://anotherdomain.com', 'https://yetanotherdomain.com'] }));
+app.use(cors({ origin: ['https://example.com'] }));
 
 app.get('/', (req, res) => {
   res.send('Welcome to Team Syncer API!');
